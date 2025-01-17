@@ -26,9 +26,10 @@ class Noticia extends Model
     {
         return $this->belongsTo(Categoria::class, 'CategoriaID');
     }
-
-    public function usuarios()
+    public function usuario()
     {
-        return $this->hasMany(Usuario::class, 'NoticiaID');
+        return $this->belongsTo(Usuario::class, 'UsuarioID');
     }
+
+
 }

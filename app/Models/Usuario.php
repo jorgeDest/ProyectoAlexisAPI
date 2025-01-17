@@ -24,11 +24,10 @@ class Usuario extends Model
     ];
 
 
-
-
-    public function noticia()
+    public function noticias()
     {
-        return $this->belongsTo(noticia::class, 'NoticiaID');
+        return $this->hasMany(Noticia::class, 'UsuarioID');
     }
+
 
 }

@@ -18,10 +18,15 @@ Route::get('Usuario',[UsuarioController::class,'usuario']);
 Route::post('login',[UsuarioController::class,'login']);
 
 
-Route::get('/Categorias',[CategoriaController::class,'categoria']);
+Route::get('Categorias',[CategoriaController::class,'categoria']);
 
 
 Route::post('SubirNoticia',[NoticiaController::class,'Noticia']);
+
+
+Route::get('CargarNoticias',[NoticiaController::class,'MostrarNoticia']);
+
+
 
 
 
